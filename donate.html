@@ -1,0 +1,72 @@
+<html>
+  <head>
+    <title>DONATE</title>
+    <script src="jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+  </head>
+  <body>
+    <div class="container">
+      <h3>Submit the details of the book here</h3>
+      <form class="form-horizontal" action="process.php" method="POST" role="form">
+        <div class="form-group">
+          <label for="university" class ="control-label col-sm-2">University*</label>
+          <div class ="col-sm-5">
+            <select class="form-control" name="university" required>
+              <option value="">Enter University</option>
+              <option value="CSVTU">CSVTU</option>
+              <option value="NIT">NIT</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="college" class ="control-label col-sm-2">College*</label>
+          <div class ="col-sm-5">
+            <select class="form-control" name="college" required>
+              <option value="">Enter College Name</option>
+              <option value="SSTC">SSTC</option>
+              <option value="BIT">BIT</option>
+              <option value="NIT">NIT</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="semester" class ="control-label col-sm-2">Semester*</label>
+          <div class ="col-sm-5">
+            <select class="form-control" name="semester" required>
+              <option value="">The book is of which semester?</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+            </select>
+          </div>
+          <div class="form-group">
+          <label for="branch" class ="control-label col-sm-2">Branch*</label>
+          <div class ="col-sm-5">
+            <select class="form-control" name="branch" required>
+              <option value="">Book belongs to which branch?</option>
+              <option value="CSE">CSE</option>
+              <option value="IT">IT</option>
+              <option value="MECH">Mechanical</option>
+              <option value="ETC">ETC</option>
+              <option value="CIVIL">CIVIL</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="book" class ="control-label col-sm-2">Book name(with author edition year)*</label>
+          <div class ="col-sm-5">
+            <input type="text" id="book" class="form-control" name="book" placeholder="Enter here" required>
+          </div>
+        </div>
+        <input type="submit" name="login_submit">
+        </div>
+      </form>
+    </div>
+  </body>
+  </html>
